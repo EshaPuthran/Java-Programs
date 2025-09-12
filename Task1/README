@@ -1,0 +1,66 @@
+This project is a Library Management System written in Java, built to showcase Object-Oriented Programming (OOP) concepts.
+It helps manage books by letting users:
+•	Add new books
+•	Issue books (if available)
+•	Return books
+•	View all books with their availability status
+               
+Key Components:
+               
+1.Book Class
+•	Extends the abstract LibraryItem.
+•	Stores book details:
+  o	Title
+  o	Author
+  o	ISBN
+•	Handles issue/return logic while updating availability.
+
+2. Issueable Interface
+Defines the common actions for library items:
+•	issue() → Issue the item (throws exception if already issued)
+•	returnItem() → Return the item
+•	isAvailable() → Check if available
+
+3. LibraryItem (Abstract Class)
+•	Parent class for all library items.
+•	Holds shared properties (title, author, isbn, available).
+•	Provides toString() for displaying item details neatly.
+
+4.Library Class
+•	Manages all books using a HashMap (ISBN → Book). [A HashMap in Java is a data structure from the java.util package that stores data in key–value pairs.]
+•	Provides methods to:
+  o	Add books (addBook)
+  o	Find a book by ISBN (findBook)
+  o	Issue a book (issueBook)
+  o	Return a book (returnBook)
+  o	Show all books (showBooks)
+
+5. Custom Exceptions
+•	ExceptionBookNotAvailable → Raised if someone tries to issue an already issued book.
+•	BookNotFoundException → Raised when a book with the given ISBN doesn’t exist.
+
+6. Main Class (Mymain)
+•	Provides a console-based menu where users can:
+  >	Add a new book
+  >	Issue a book by ISBN
+  >	Return a book by ISBN
+  >	Show all books
+  >	Exit the program
+•	Uses Scanner for user input and handles exceptions gracefully.
+
+7. LibraryTest (JUnit Tests)
+Covers important scenarios such as:
+•	Issuing a book successfully
+•	Returning a book successfully
+•	Preventing issuing of an already issued book
+•	Handling invalid ISBN lookups
+•	Checking availability of a book when first added
+
+Summary
+This project demonstrates how to build a practical OOP-based application in Java.
+It highlights:
+•	Inheritance (Book → LibraryItem)
+•	Interfaces (Issueable)
+•	Abstraction (common logic in LibraryItem)
+•	Exception Handling (custom errors for library operations)
+•	Unit Testing (ensuring reliability with JUnit)
