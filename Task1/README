@@ -56,7 +56,47 @@ Covers important scenarios such as:
 •	Handling invalid ISBN lookups
 •	Checking availability of a book when first added
 
-Summary
+ Setup (in Eclipse)
+1.  Open Eclipse IDE.
+2.  Create a new Java Project (for example: LibrarySystem).
+3.  Inside the src folder, create a package named demo.
+4.  Add your Java files into this package:
+  •	Mymain.java
+  •	Library.java
+  •	LibraryItem.java
+  •	Book.java
+  •	Issueable.java
+  •	BookNotFoundException.java
+  •	ExceptionBookNotAvailable.java
+5.  For testing:
+  •	Right-click on the demo package → New → JUnit Test Case.
+  •	Name it LibraryTest.
+  •	Eclipse will automatically add JUnit to your project when you do this.
+  •	Paste the test code inside LibraryTest.java.
+6. Save the project (Ctrl + S). Eclipse will compile automatically.
+
+ Usage (Running the Program)
+*To run the main program (Mymain.java):
+  1.	Open Mymain.java.
+  2.	Right-click inside the file → Run As → Java Application.
+  3.	The menu will appear in the Eclipse Console (Add, Issue, Return, Show, Exit).
+*To run your tests (LibraryTest.java):
+  1.	Open LibraryTest.java.
+  2.	Right-click inside the file → Run As → JUnit Test.
+  3.	Eclipse shows results in the JUnit panel (green = all passed, red = some failed).
+
+ Test Execution (JUnit in Eclipse)
+1.	Open LibraryTest.java in Eclipse.
+2.	Right-click inside the file → Run As → JUnit Test.
+3.	Eclipse will run all the test cases:
+  o	 Issue book successfully
+  o	 Return book successfully
+  o	 Prevent duplicate issue
+  o	 Handle invalid ISBNs
+  o	 Confirm new book availability
+If all tests pass, you’ll see a green bar in the JUnit panel. If any fail, it will show a red bar with details.
+
+Summary :
 This project demonstrates how to build a practical OOP-based application in Java.
 It highlights:
 •	Inheritance (Book → LibraryItem)
