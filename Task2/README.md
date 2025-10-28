@@ -7,12 +7,18 @@ Demonstrates
 - Thread-safe file writing using `synchronized` methods  
 - Storing student data (Name, Roll Number, Marks) in a CSV file  
 - JUnit tests verifying file writing and thread completion
+  
 Files Overview
-•	‘Student.java’ -> Represents a student record (name, roll number, marks) 
+•	‘Student.java’ -> Represents a student record (name, roll number, marks)
+
 •	“ResultWriter.java” -> Handles thread-safe writing to a CSV file 
+
 •	“StudentWorker.java” -> Implements “Runnable”, simulating each student submitting a score 
+
 •	“MainApp.java” ->Main class that starts and coordinates all student threads 
+
 •	“ResultWriterTest.java” ->JUnit tests verifying file writing and content correctness 
+
 •	“ThreadTest.java” -> JUnit tests verifying multi-threaded writing and thread completion
 
 Program Output
