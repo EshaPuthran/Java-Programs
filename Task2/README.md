@@ -13,7 +13,8 @@ Files Overview
 •	“StudentWorker.java” -> Implements “Runnable”, simulating each student submitting a score 
 •	“MainApp.java” ->Main class that starts and coordinates all student threads 
 •	“ResultWriterTest.java” ->JUnit tests verifying file writing and content correctness 
-•	“ThreadTest.java” -> JUnit tests verifying multi-threaded writing and thread completion 
+•	“ThreadTest.java” -> JUnit tests verifying multi-threaded writing and thread completion
+
 Program Output
 
 Starting submissions
@@ -24,6 +25,7 @@ Student-IS04 logged: Sheela,IS04,92
 Student-IS03 logged: Disha,IS03,78
 
 All student records are saved successfully
+
 JUnit Results:
 Student-CS01 logged: Ram,CS01,95
 Student-CS02 logged: Seetha,CS02,90
