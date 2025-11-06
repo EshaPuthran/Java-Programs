@@ -1,17 +1,34 @@
 Student Exam Score Logger
+
 This Java program simulates multiple students submitting their exam scores at the same time using threads. Scores are safely written to a shared CSV file using synchronized file writing to ensure thread safety.
+
+
 Demonstrates
+
 •	Multiple threads writing concurrently
+
 •	Thread-safe file writing using synchronized methods
+
 •	Storing student data (Name, Roll Number, Marks) in a CSV file
+
 •	JUnit tests verifying file writing and thread completion
+
+
 Files Overview
+
 •	Student.java → Represents a student record (name, roll number, marks)
+
 •	ResultWriter.java → Handles thread-safe writing to a CSV file
+
 •	StudentWorker.java → Implements Runnable, simulating each student submitting a score
+
 •	MainApp.java → Main class that starts and coordinates all student threads
+
 •	ExamLoggerIntegrationTest.java → JUnit integration tests verifying file writing, thread safety, and exception handling
+
+
 OUTPUT:
+
 Starting submissions
 
 Student-IS02 logged: Jia,IS02,90
@@ -22,6 +39,8 @@ Student-IS03 logged: Disha,IS03,78
 All student records are saved successfully
 
 Junit results:
+
+
 Student-CS04 logged: Krish,CS04,75
 Student-CS03 logged: Gita,CS03,85
 Student-CS01 logged: Ram,CS01,95
